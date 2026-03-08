@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>eDex — AI Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__brand">eDex</div>
+      <nav class="nav__links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#integrations">Integrations</a>
+        <button class="btn btn--ghost">Try eDex</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">AI assistant for modern work</p>
+          <h1>Meet eDex, your Claude‑inspired AI assistant</h1>
+          <p class="hero__lead">
+            Chat on web, iOS, Android, and desktop. Generate code, visualize data, analyze text and images, and connect your favorite tools.
+          </p>
+          <div class="hero__cta">
+            <button class="btn btn--primary">Start free</button>
+            <button class="btn btn--secondary">View plans</button>
+          </div>
+          <div class="hero__meta">
+            <div>
+              <span class="hero__stat">$0</span>
+              <span class="hero__label">Free plan</span>
+            </div>
+            <div>
+              <span class="hero__stat">$17</span>
+              <span class="hero__label">Pro annual</span>
+            </div>
+            <div>
+              <span class="hero__stat">$100+</span>
+              <span class="hero__label">Max usage</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="card__header">
+            <span class="status-dot"></span>
+            <span>eDex Live</span>
+          </div>
+          <div class="card__body">
+            <p>Hi! I’m eDex. I can draft content, explore data, and orchestrate workflows across your tools.</p>
+            <div class="card__chips">
+              <span>Code</span>
+              <span>Data</span>
+              <span>Images</span>
+              <span>Search</span>
+            </div>
+          </div>
+          <div class="card__footer">
+            <input id="quick-input" type="text" placeholder="Ask eDex anything…" />
+            <button id="quick-send" class="btn btn--primary">Send</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ask">
+        <div class="ask__content">
+          <h2>Ask eDex anything</h2>
+          <p>Type your question below to start a conversation.</p>
+        </div>
+        <div id="chat-log" class="chat-log"></div>
+        <div class="ask__box">
+          <textarea id="ask-input" rows="3" placeholder="Type your question here..."></textarea>
+          <button id="ask-send" class="btn btn--primary">Ask eDex</button>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="section__header">
+          <h2>Everything you need, from a single assistant</h2>
+          <p>Built to feel familiar yet more focused, eDex mirrors Claude‑style clarity while adding stronger workflow depth.</p>
+        </div>
+        <div class="grid">
+          <div class="feature">
+            <h3>Multimodal reasoning</h3>
+            <p>Analyze text and images, extract insights, and get structured answers instantly.</p>
+          </div>
+          <div class="feature">
+            <h3>Code + data workflows</h3>
+            <p>Generate code, run analyses, and visualize results in one conversation.</p>
+          </div>
+          <div class="feature">
+            <h3>Tool connections</h3>
+            <p>Connect Slack, Google Workspace, and custom tools with secure connectors.</p>
+          </div>
+          <div class="feature">
+            <h3>Extended thinking</h3>
+            <p>Ask for deeper reasoning when tasks get complex or high‑stakes.</p>
+          </div>
+          <div class="feature">
+            <h3>Cross‑device access</h3>
+            <p>Switch between web, iOS, Android, and desktop without losing context.</p>
+          </div>
+          <div class="feature">
+            <h3>Project memory</h3>
+            <p>Keep long‑running projects organized with persistent threads.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section section--alt">
+        <div class="section__header">
+          <h2>Simple plans that scale with you</h2>
+          <p>Start free, upgrade for more usage, and unlock higher limits when needed.</p>
+        </div>
+        <div class="pricing">
+          <div class="plan">
+            <h3>Free</h3>
+            <p class="plan__price">$0</p>
+            <ul>
+              <li>Chat on web, iOS, Android, desktop</li>
+              <li>Generate code and visualize data</li>
+              <li>Analyze text and images</li>
+              <li>Search the web and execute code</li>
+            </ul>
+            <button class="btn btn--secondary">Get started</button>
+          </div>
+          <div class="plan plan--featured">
+            <div class="plan__tag">Popular</div>
+            <h3>Pro</h3>
+            <p class="plan__price">$17<span>/mo</span></p>
+            <ul>
+              <li>More usage and unlimited projects</li>
+              <li>Access to research features</li>
+              <li>Memory across conversations</li>
+              <li>Desktop extensions and tool connectors</li>
+            </ul>
+            <button class="btn btn--primary">Upgrade</button>
+          </div>
+          <div class="plan">
+            <h3>Max</h3>
+            <p class="plan__price">$100+</p>
+            <ul>
+              <li>5–20x more usage than Pro</li>
+              <li>Higher output limits</li>
+              <li>Early access to advanced features</li>
+              <li>Priority access at peak times</li>
+            </ul>
+            <button class="btn btn--secondary">Talk to sales</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="integrations" class="section">
+        <div class="section__header">
+          <h2>Plug into the tools you already use</h2>
+          <p>Connect Slack, Google Workspace, and any MCP-compatible tool in minutes.</p>
+        </div>
+        <div class="integrations">
+          <div>Slack</div>
+          <div>Google Workspace</div>
+          <div>Desktop Extensions</div>
+          <div>Remote MCP</div>
+          <div>Claude‑style Apps</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>eDex is a Claude‑inspired AI assistant experience for focused, reliable work.</p>
+      <button class="btn btn--ghost">Join early access</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
